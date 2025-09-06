@@ -1,0 +1,9 @@
+echo "<p>Edited on main branch</p>" >> index.html
+git commit -am "Main branch change"
+
+ echo "<p>Different change on feature branch</p>" >> index.html
+git commit -am "Feature branch change"
+
+git switch main
+git merge feature/header
+
